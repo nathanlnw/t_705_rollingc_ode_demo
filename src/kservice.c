@@ -1075,6 +1075,8 @@ void rt_kprintf(const char *fmt, ...)
 
 	va_start(args, fmt);
 	length = vsnprintf(rt_log_buf, sizeof(rt_log_buf), fmt, args);
+	rt_hw_console_output(rt_log_buf);
+#if 0	
 #ifdef RT_USING_DEVICE
 	if (_console_device == RT_NULL)
 	{
@@ -1086,6 +1088,7 @@ void rt_kprintf(const char *fmt, ...)
 	}
 #else
 	rt_hw_console_output(rt_log_buf);
+#endif
 #endif
 	va_end(args);
 }

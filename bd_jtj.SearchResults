@@ -1,9 +1,3 @@
----- Max_CycleNum Matches (9 in 5 files) ----
-Device_808.c (bsp\stm32f207vc_tw705\app_712\protocol_808):			       if(cycle_write>=Max_CycleNum)
-Device_808.c (bsp\stm32f207vc_tw705\app_712\protocol_808):					 if(cycle_read>=Max_CycleNum)
-Flash_Oper.c (bsp\stm32f207vc_tw705\app_712\dataflash):		         if(cycle_write>=Max_CycleNum)
-Flash_Oper.c (bsp\stm32f207vc_tw705\app_712\dataflash):		        if(cycle_read>=Max_CycleNum)
-Flash_Oper.c (bsp\stm32f207vc_tw705\app_712\dataflash):		  if(cycle_read>=Max_CycleNum)
-Protocol_808.c (bsp\stm32f207vc_tw705\app_712\protocol_808):			delta_0704_rd=cycle_write+Max_CycleNum-cycle_read; 
-Sys_config.c (bsp\stm32f207vc_tw705\app_712\protocol_808):         rt_kprintf("\r\n        Max_picNum =  %d   Max_CycleNum = %d   Max_DrvRcdNum=%d \r\n",Max_PicNum,Max_CycleNum,Max_RecoderNum); 
-Sys_config.h (bsp\stm32f207vc_tw705\app_712\protocol_808):#define   Max_CycleNum                  24567 
+---- Entering_Learn_checking Matches (2 in 1 files) ----
+Startup.c (bsp\stm32f207vc_tw705\applications):void  Entering_Learn_checking(void)
+Startup.c (bsp\stm32f207vc_tw705\applications):				    Entering_Learn_checking();
